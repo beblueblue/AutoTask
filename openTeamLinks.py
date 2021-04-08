@@ -13,7 +13,9 @@ tabs_list = [
   # Titan wishlist
   'https://docs.google.com/spreadsheets/d/11UCFueGUcgi4sqaCLmVmRaliLI1Ay2u2MXoywWXlnDs/edit#gid=1508044272',
   # Titan dashboard
-  'https://jira.ringcentral.com/secure/Dashboard.jspa?selectPageId=25460'
+  'https://jira.ringcentral.com/secure/Dashboard.jspa?selectPageId=25460',
+  # Feature owners
+  'https://docs.google.com/spreadsheets/d/1s8dwjO7dIg0VfZV4BAA2qO1SRrRBBPlfDeC-6QsZMpo/edit#gid=0'
 ]
 # -n opens a new instance of an application. Google Chrome detects this and remedies the situation by closing the new instance and passing the tab’s location to the first instance, but this is necessary to force arguments to be read.
 # --args indicates what's to follow are arguments to be passed to Google Chrome, not open.
