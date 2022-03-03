@@ -7,7 +7,7 @@ Author: 黄华智
 
 import os
 # 需要打开的 tabs
-tabs_list = [
+release_list = [
   # Jupiter Release Schedule 
   # 'https://docs.google.com/spreadsheets/d/1cl10AHmQ1QwZGdQkEe3n0gCwwx8icsu1hMATs0hR93w/edit#gid=540016998',
   'https://docs.google.com/spreadsheets/d/1cl10AHmQ1QwZGdQkEe3n0gCwwx8icsu1hMATs0hR93w/edit#gid=2123718530',
@@ -24,6 +24,11 @@ tabs_list = [
 
   # Phone ScrumBoard
   'https://jira.ringcentral.com/secure/RapidBoard.jspa?rapidView=5429&selectedIssue=FIJI-46626&sprint=18894&quickFilter=19373',
+]
+
+backup_list = [
+  # Jupiter Retrospective - Improvement Backlog
+  'https://docs.google.com/spreadsheets/d/1ooMdZEb7-pq0-78QiQjYpw7VA2gbteUZkWlDtVJ_ow8/edit#gid=803395963',
 
   # AHA - Jupiter Phone Feature list 
   # 'https://ringcentral.aha.io/bookmarks/feature_grids/7065107510977201830/7070411801200672071',
@@ -32,7 +37,9 @@ tabs_list = [
   # Feature owners
   'https://docs.google.com/spreadsheets/d/1s8dwjO7dIg0VfZV4BAA2qO1SRrRBBPlfDeC-6QsZMpo',
 ]
+
 # -n opens a new instance of an application. Google Chrome detects this and remedies the situation by closing the new instance and passing the tab’s location to the first instance, but this is necessary to force arguments to be read.
 # --args indicates what's to follow are arguments to be passed to Google Chrome, not open.
 # --new-window is a Google Chrome argument to force a new window to be created.
-os.system('open -na "Google Chrome" --args --new-window ' + ' '.join(tabs_list))
+os.system('open -na "Google Chrome" --args --new-window ' + ' '.join(release_list))
+os.system('open -na "Google Chrome" --args --new-window ' + ' '.join(backup_list))
